@@ -18,3 +18,13 @@ The use case is for a company that receives a large volume of customer reviews o
 
 
 # Steps to implement
+
+1.AWS Lambda will be triggered by an S3 Event Notification configured on the internship/csv_input/ S3 bucket. The Lambda function will read the CSV file, transform it to JSON format, and store the resulting file in the internship/json_output/ bucket.
+
+2.The data will be stored in the internship/json_output/ S3 bucket, which will serve as the data source for the Spark job.
+
+3.We can use Apache Spark's built-in support for S3 to read the JSON file directly from the S3 bucket. We can use the SparkSession.builder to create a SparkSession and configure it with the necessary S3 credentials.
+
+4.Once we have loaded the data into a Spark DataFrame, we can use PySpark's MLlib library to perform the sentiment analysis. 
+
+5.Finally, we can save the resulting image to HDFS using the write method of the DataFrameWriter
