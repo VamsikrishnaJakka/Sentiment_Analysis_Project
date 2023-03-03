@@ -37,7 +37,7 @@ The use case is for a company that receives a large volume of customer reviews o
 1.
 AWS Lambda will be triggered by an S3 Event Notification configured on the internship/csv_input/ S3 bucket. The Lambda function will read the CSV file, transform it to JSON format, and store the resulting file in the internship/json_output/ bucket. 
 
-AWS Lambda code is (csv_to_json_converter)
+AWS Lambda code is (csv_to_json_converter.py file)
 
 2.
 The data will be stored in the internship/json_output/ S3 bucket. amazon_input.csv and amazon_output.json is attached
@@ -81,4 +81,5 @@ hadoop fs -D fs.s3a.access.key=<your_access_key> -D fs.s3a.secret.key=<your_secr
  Store the final result in new hdfs location 
  fig.write_image("hdfs://internship_data/categorical_variable_summary.png")
  
+ Output is attached as categorical_variable_summary.png
  
