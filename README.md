@@ -31,3 +31,19 @@ The use case is for a company that receives a large volume of customer reviews o
 
 
 # Detailed Procedure
+
+Pull the docker image :
+docker run -p 8888:8888 jupyter/all-spark-notebook
+
+Run the docker image:
+docker run -it --rm -p 8888:8888 -p 4040:4040 -p 4041:4041 -p 4042:4042 -p 4043:4043 -p 8080:8080 jupyter/all-spark-notebook
+
+Here, 
+ 8888:8888: you can access the Jupyter Notebook server.
+ 4040:4040: which is used by Spark for its web UI.
+ 4041:4041: which is used by Spark for the BlockManager.
+ 4042:4042: which is used by Spark for the driver program.
+ 4043:4043: which is used by Spark for the cluster manager.
+ 8080:8080: which is used by Spark for the REST API.
+
+
