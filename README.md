@@ -14,6 +14,7 @@ The use case is for a company that receives a large volume of customer reviews o
 4.Spark
 
 # Architecture
+![image](https://user-images.githubusercontent.com/58679637/222682521-771e4588-a4cf-496d-a8ee-8ebacd3fa423.png)
 
 
 # Steps to implement
