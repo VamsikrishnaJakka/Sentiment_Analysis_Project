@@ -17,7 +17,7 @@ The use case is for a company that receives a large volume of customer reviews o
 ![image](https://user-images.githubusercontent.com/58679637/222682521-771e4588-a4cf-496d-a8ee-8ebacd3fa423.png)
 
 
-# Steps to implement
+# Architecture explanation
 
 1.AWS Lambda will be triggered by an S3 Event Notification configured on the internship/csv_input/ S3 bucket. The Lambda function will read the CSV file, transform it to JSON format, and store the resulting file in the internship/json_output/ bucket.
 
@@ -28,3 +28,6 @@ The use case is for a company that receives a large volume of customer reviews o
 4.Once we have loaded the data into a Spark DataFrame, we can use PySpark's MLlib library to perform the sentiment analysis. 
 
 5.Finally, we can save the resulting image to HDFS using the write method of the DataFrameWriter
+
+
+# Detailed Procedure
