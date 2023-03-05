@@ -75,7 +75,7 @@ hadoop fs -D fs.s3a.access.key=<your_access_key> -D fs.s3a.secret.key=<your_secr
  hadoop fs -cp s3://my-bucket/data/amazon.json /internship_data/
 
 7.
- Now run the spark ml code(sentiment_analysis.py) on pyspark terminal.
+ Now run the spark ml code(sentiment_analysis.py) on pyspark terminal. I have also used libraries like pandas and NLP on amazon.csv dataset for practise. Attaching the same as sentiment_analysis_csv.py
  
 8.
  Store the final result in new hdfs location 
